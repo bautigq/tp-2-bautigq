@@ -19,6 +19,16 @@ Ada Lovelace
 ADA LOVELACE  
 	ada lovelace
 ```
+*Codigo*
+first_name = "AdA"
+last_name = "LoVeLAce"
+
+print(first_name.lower(), last_name.lower())
+print(first_name.capitalize(), last_name.capitalize())
+print(first_name.upper(), last_name.upper())
+print("\t" + first_name.lower(), last_name.lower())
+
+
 
 ## Ejercicio 2 - Earth
 
@@ -32,6 +42,15 @@ La respuesta debería tener el siguiente formato (Donde X es Bangladesh e Y es B
 The result of X comes first in the dictionary than Y is True/False.
 The result of Y comes first in the dictionary than X is True/False.
 ```
+*Codigo*
+country1 = "Bangladesh"
+country2 = "Barbados"
+
+result1 = country1 < country2
+result2 = country2 < country1
+
+print(f"The result of {country1} comes first in the dictionary than {country2} is {result1}.")
+print(f"The result of {country2} comes first in the dictionary than {country1} is {result2}.")
 
 
 ## Ejercicio 3 - Change
@@ -53,3 +72,16 @@ Pesos:
 Centavos:
 25
 ```
+*Codigo*
+gasto = float(input("Ingresar gasto:\n"))
+pago = float(input("Dinero recibido\n"))
+
+vuelto = pago - gasto
+pesos = int(vuelto)
+centavos = int(round((vuelto - pesos) * 100))
+
+print("\nVuelto\n")
+print("Pesos:")
+print(pesos)
+print("Centavos:")
+print(centavos)
