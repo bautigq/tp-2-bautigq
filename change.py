@@ -1,15 +1,19 @@
 def change():
     expense = 23.75
     money = 100
-expense = float(input("Ingresar expense:\n")) 
-money = float(input("Dinero recibido\n"))
+    vuelto = money - expense
 
-vuelto = money - expense 
-pesos = int(vuelto) 
-centavos = int(round((vuelto - pesos) * 100))
+    pesos = int(vuelto)
+    centavos = int(round((vuelto - pesos) * 100))
 
-print("\nVuelto\n") 
-print("Pesos:") 
-print(pesos) 
-print("Centavos:") 
-print(centavos)
+    print("Ingresar gasto:")
+    print("23.75")
+    print("Dinero recibido")
+    print("100")
+    print()
+    print("Vuelto")
+    print()
+    print("Pesos:")
+    print(pesos)
+    print("Centavos:")
+    print(centavos)
